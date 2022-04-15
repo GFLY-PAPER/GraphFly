@@ -1,2 +1,2 @@
-# GraphFly1
+# GraphFly
 python main.py
