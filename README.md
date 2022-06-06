@@ -1,11 +1,11 @@
 # GraphFly focus on dependency-flow exploiting. 
 
 GraphFly generates the D-trees of initial graph. And the initial graph is divided into many dependency-flows.
-   python main.py
 
-GraphFly can be easily integrated in existing streaming graph systems. Following commands is we use GraphBolt systems (https://github.com/pdclab/graphbolt) to execute dependency-flows: 
+   $ python main.py
+
+GraphFly can be easily integrated in existing streaming graph systems. Following commands is we use GraphBolt systems (https://github.com/pdclab/graphbolt) to execute graph algorithms based on dependency-flows processing: 
    
-Execution commands for graph algorithms based on dependency-flows processing.
    $ ./BFS -source 1 -numberOfUpdateBatches 1 -nEdges 100000
 -streamPath ../inputs/live-journal/[edge streams file] 
 -outputFile /tmp/output/bfs_log ../inputs/livejournal/
